@@ -1,0 +1,12 @@
+.icon-moon {
+	background: url("icon-theme-spriteSVG.svg") 0 0 no-repeat;
+	width: 18px;
+	height: 18px;
+}
+
+.sun-icon {
+	background: url("icon-theme-spriteSVG.svg") 0 100% no-repeat;
+	width: 20px;
+	height: 20px;
+}
+

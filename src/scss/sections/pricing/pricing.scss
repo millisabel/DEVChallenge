@@ -1,0 +1,65 @@
+.pricing{
+  --gradient: 25, 28, 41;
+
+  margin-bottom: 50px;
+
+  @media (min-width: $screen-tablet) {
+    margin-bottom: 150px;
+  }
+
+  .row{
+    position: relative;
+  }
+
+  &__row{
+    padding: 0 0 20px 0;
+
+    @media (min-width: $screen-tablet) {
+      padding: 44px 0;
+    }
+  }
+
+  &__bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+
+    width: 100%;
+
+    @media (min-width: $screen-tablet) {
+      max-width: 566px;
+      max-height: 100%;
+    }
+
+    .no-webp &{
+      background: linear-gradient(0deg,
+              rgba(var(--gradient), 0.84),
+              rgba(var(--gradient), 0.84)),
+      url("../images/features-background-image.jpg") 0 0 no-repeat;
+      background-size: cover;
+    }
+
+    .webp &{
+      background: linear-gradient(0deg,
+              rgba(var(--gradient), 0.84),
+              rgba(var(--gradient), 0.84)),
+      url("../images/features-background-image.webp") 0 0 no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .card{
+    margin: 20px auto 0;
+  }
+
+  &__advantages{
+    padding: 30px 15px;
+
+    @media (min-width: $screen-tablet) {
+      max-width: 757px;
+      padding: 72px 0 72px 62px;
+    }
+  }
+}

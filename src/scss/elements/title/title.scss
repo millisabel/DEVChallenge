@@ -1,0 +1,19 @@
+.title{
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: em(36);
+  line-height: calc(48 / 36);
+
+  color: rgba(var(--primary), 1);
+
+  @media (min-width: $screen-tablet) {
+    font-size: em(44);
+    line-height: calc(52 / 44);
+  }
+
+  &__mark{
+    font-style: italic;
+    color: rgba(var(--mark), 1);
+  }
+}

@@ -1,0 +1,85 @@
+.resources{
+  --width-text: 380px;
+
+  margin-bottom: 50px;
+
+  @media (min-width: $screen-tablet) {
+    margin-bottom: 196px;
+  }
+
+  &__row{
+    position: relative;
+
+    overflow: hidden;
+
+    @media (min-width: $screen-tablet) {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+    }
+  }
+
+  &__text{
+    margin-left: -1px;
+    margin-bottom: -1px;
+
+    @media (min-width: $screen-tablet) {
+      position: relative;
+      z-index: 5;
+
+      min-width: var(--width-text);
+      max-width: var(--width-text);
+
+      background: rgba(var(--bg-color), 1);
+    }
+
+    &>div{
+      @media (min-width: $screen-tablet) {
+        width: 390px;
+        padding-right: 60px;
+      }
+    }
+
+    .title{
+      margin-bottom: 20px;
+
+      @media (min-width: $screen-tablet) {
+        font-size: em(40);
+        line-height: calc(48 / 40);
+      }
+    }
+
+    p{
+      margin-bottom: 40px;
+
+      @media (min-width: $screen-tablet) {
+        margin-bottom: 0;
+
+        font-weight: 300;
+        line-height: calc(26 / 18);
+      }
+    }
+  }
+
+  &__slider{
+
+    @media (min-width: $screen-tablet) {
+      flex-grow: 1;
+
+      //calc(100% - 390px);
+    }
+  }
+
+  .control{
+
+    @media (min-width: $screen-tablet) {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 10;
+
+      width: 328px;
+    }
+
+  }
+}

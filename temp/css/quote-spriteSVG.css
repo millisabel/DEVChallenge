@@ -1,0 +1,12 @@
+.quote-icon {
+	background: url("quote-spriteSVG.svg") 0 0 no-repeat;
+	width: 102px;
+	height: 84px;
+}
+
+.quote-icon-night {
+	background: url("quote-spriteSVG.svg") 0 100% no-repeat;
+	width: 102px;
+	height: 84px;
+}
+

@@ -1,0 +1,38 @@
+.btn--menu{
+  position: relative;
+
+  width: 32px;
+  height: 32px;
+  padding: 2px;
+  margin-right: 10px;
+  border-radius: 2px;
+
+  background: rgba(var(--primary), 0.3);
+  
+  &::after{
+    content: "";
+
+    position: absolute;
+    top: calc(50% - 1px);
+
+    display: block;
+    width: 28px;
+    height: 2px;
+
+    background: rgba(var(--white), 1);
+
+    box-shadow: 0 7px 0 rgba(var(--white), 1), 0 -7px 0 rgba(var(--white), 1);
+
+    transition: 0.5s;
+  }
+
+  &:focus{
+    outline: none;
+  }
+
+  &:focus::after,
+  &:hover::after{
+    background: rgba(var(--mark), 1);
+    box-shadow: 0 9px 0  rgba(var(--mark), 1), 0 -9px 0 rgba(var(--mark), 1);
+  }
+}

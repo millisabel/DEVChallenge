@@ -1,0 +1,42 @@
+.home{
+  min-height: 100vh;
+  //margin-top: -107px;
+
+  @media (min-width: $screen-tablet) {
+    min-height: 730px;
+  }
+
+  .row{
+    background: transparent;
+  }
+
+  &__wrap{
+    padding: 170px 0;
+
+    @media (min-width: $screen-tablet) {
+      padding: 266px 0 163px;
+    }
+  }
+
+  &__title{
+    margin-bottom: 50px;
+
+    @media (min-width: $screen-tablet) {
+      margin-bottom: 24px;
+      max-width: 50%;
+    }
+  }
+
+  &__text{
+    margin-bottom: 50px;
+
+    font-weight: 300;
+    line-height: calc(26 / 18);
+
+    @media (min-width: $screen-tablet) {
+      max-width: 43%;
+
+      letter-spacing: 0.09px;
+    }
+  }
+}

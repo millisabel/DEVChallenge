@@ -1,0 +1,96 @@
+.slider{
+  --width-slide: 468px;
+  --height-slide: 333px;
+
+
+
+  &__track{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    margin-bottom: 30px;
+    overflow: hidden;
+
+    @media (min-width: $screen-tablet) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: var(--width-slide);
+    min-height: var(--height-slide);
+    padding: 51px 48px 48px 48px;
+    margin: 0 10px;
+
+    color: rgba(var(--white), 0.8);
+
+    &:nth-child(4n+1){
+      .no-webp &{
+        background: rgba(var(--gradient), 0.7) url("../images/slides/slide-1.png") 0 0 no-repeat;
+        background-size: cover;
+      }
+
+      .webp &{
+        background: rgba(var(--gradient), 0.7) url("../images/slides/slide-1.webp") 0 0 no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &:nth-child(4n+2){
+      .no-webp &{
+        background: rgba(var(--gradient), 0.7) url("../images/slides/slide-2.png") 0 0 no-repeat;
+        background-size: cover;
+      }
+
+      .webp &{
+        background: rgba(var(--gradient), 0.7) url("../images/slides/slide-2.webp") 0 0 no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &:nth-child(4n+3){
+      .no-webp &{
+        background: rgba(var(--gradient), 0.7) url("../images/slides/slide-3.png") 0 0 no-repeat;
+        background-size: cover;
+      }
+
+      .webp &{
+        background: rgba(var(--gradient), 0.7) url("../images/slides/slide-3.webp") 0 0 no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &:nth-child(4n){
+      .no-webp &{
+        background: rgba(var(--gradient), 0.7) url("../images/slides/slide-4.png") 0 0 no-repeat;
+        background-size: cover;
+      }
+
+      .webp &{
+        background: rgba(var(--gradient), 0.7) url("../images/slides/slide-4.webp") 0 0 no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  &__text{
+    margin: 0;
+
+    font-size: em(16);
+    line-height: calc(26 / 16);
+  }
+
+  &__user{
+    font-family: var(--title-font);
+    font-style: italic;
+    font-size: em(20);
+    line-height: calc( 20 / 20);
+    letter-spacing: 0.08em;
+    color:  var(--white);
+  }
+}

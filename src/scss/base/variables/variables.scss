@@ -1,0 +1,52 @@
+$screen-mobile: 576px;
+$screen-tablet: 768px;
+$screen-desktop: 1200px;
+
+$base-size: 18px;
+
+:root{
+  --max-width-mobile: 414px;
+  --max-width-tablet: 720px;
+  --max-width-desktop: 1150px;
+
+  --text-size: 18px;
+  --text-font: 'Lato', sans-serif;
+  --title-font: "Playfair Display", sans-serif;
+
+  --primary: 38, 42, 63;
+  --white: 255, 255, 255;
+  --grey: 228,228,228;
+  --black: 0, 0, 0;
+
+  --mark: 133, 187, 177;
+  --btn-color: 241, 137, 123;
+  --btn-play: 88,98,145;
+  --card-color: 22, 35, 38;
+
+  --bg-color: var(--white);
+  --border-color: rgb(var(--grey));
+  --btn-play-after: var(--primary);
+  --form-text: var(--primary);
+
+  --gradient: 25, 28, 41;
+  --gradient-color-header: var(--white);
+
+  --theme: 0 0;
+  --quote: 0 0;
+
+  body.theme-is-black{
+    --primary: 255, 255, 255;
+    --mark: 104, 159, 242;
+    --bg-color: 22, 35, 38;
+    --btn-color: 83, 243, 205;
+    --btn-play: 104,159,242;
+    --form-text: 187, 188, 193;
+    --btn-play-after: var(--mark);
+    --border-color: rgb(81, 87, 115);
+
+    --gradient-color-header: 22, 25, 38;
+
+    --theme: 0 100%;
+    --quote: 0 100%;
+  }
+}

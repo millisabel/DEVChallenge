@@ -1,0 +1,33 @@
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+body{
+  margin: 0;
+
+  font-family: var(--text-font);
+  font-size: em(16);
+  font-weight: normal;
+  color: rgba(var(--primary), 0.8);
+
+  @media (min-width: $screen-tablet) {
+    font-size: var(--text-size);
+  }
+}
+
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}

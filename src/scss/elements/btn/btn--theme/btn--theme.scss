@@ -1,0 +1,47 @@
+.btn--theme{
+  position: relative;
+
+  width: 32px;
+  height: 32px;
+
+  background: rgba(var(--primary), 0.3);
+  border-radius: 1px;
+
+  overflow: hidden;
+
+  input{
+    display: none;
+  }
+
+  &::after{
+    content: '';
+
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    right: 7px;
+    bottom: 7px;
+    z-index: 10;
+
+    width: 18px;
+    height: 18px;
+
+    display: block;
+    background: url("../images/sprites/icon-theme-spriteSVG.svg") no-repeat;
+    background-position: var(--theme);
+    background-size: 20px;
+
+    transition: 0.7s;
+  }
+
+  &:focus{
+    outline: none;
+  }
+
+  &:focus,
+  &:hover{
+    &::after{
+      transform: scale(1.5);
+    }
+  }
+}
