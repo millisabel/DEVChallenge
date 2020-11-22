@@ -2,13 +2,8 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p{
-  margin: 0;
-}
-
-img{
-  max-width: 100%;
-  height: auto;
+html{
+  scroll-behavior: smooth;
 }
 
 body{
@@ -19,9 +14,19 @@ body{
   font-weight: normal;
   color: rgba(var(--primary), 0.8);
 
+
   @media (min-width: $screen-tablet) {
     font-size: var(--text-size);
   }
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden{

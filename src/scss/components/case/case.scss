@@ -20,6 +20,18 @@
       padding: 40px 0;
     }
 
+    &:first-child{
+
+      @media (min-width: $screen-tablet) {
+        margin: 0 20px;
+      }
+
+      @media (min-width: $screen-desktop) {
+        margin: 0;
+      }
+
+    }
+
     &:last-child{
       max-width: var(--width);
 
