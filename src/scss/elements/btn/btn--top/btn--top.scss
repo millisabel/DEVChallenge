@@ -1,0 +1,64 @@
+.btn--top{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+
+
+  background: linear-gradient(180deg,
+          rgba(var(--btn-color), 0.2),
+          rgba(var(--btn-color), 0.8));
+  backdrop-filter: blur(9px);
+  opacity: 0.5;
+  transition: 0.5s;
+
+  @media (min-width: $screen-tablet) {
+    display: none;
+  }
+
+  &::before,
+  &::after{
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    z-index: 101;
+
+    display: block;
+    width: 18px;
+    height: 2px;
+
+    background: rgba(var(--white), 1);
+    transition: 0.5s;
+  }
+
+  &::before{
+    left: 10px;
+    transform: rotate(-45deg);
+  }
+
+  &::after{
+    right: 10px;
+    transform: rotate(45deg);
+  }
+
+  &:hover{
+
+    &::before,
+    &::after{
+      background: rgba(var(--white), 0.8);
+    }
+
+    &::before{
+      box-shadow: -5px 5px rgba(var(--white), 1), 5px -5px rgba(var(--white), 0.4);
+    }
+
+    &::after{
+      box-shadow: 5px 5px rgba(var(--white), 1), -5px -5px rgba(var(--white), 0.4);
+    }
+  }
+}
