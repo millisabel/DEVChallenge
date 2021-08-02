@@ -6,6 +6,7 @@
 //=require scripts/setSlider.js
 //=require scripts/player.js
 //=require scripts/btnTop.js
+//=require scripts/closeModal.js
 
 window.addEventListener('load', function(){
     setTheme('.btn--theme', 'theme-is-black');
